@@ -736,7 +736,7 @@ def show_core_features():
     col_header, col_button = st.columns([8, 2])
     
     with col_header:
-        st.markdown(f"<div class='features-container'><h2 class='features-header-title'>Core Features & Services</h2>", unsafe_allow_html=True)
+        st.markdown(f"<div class='features-container'><h2 class='features-header-title'>Powerful features That Work For You</h2>", unsafe_allow_html=True)
         st.markdown("<p class='features-header-subtitle'>Beyond simply comparing numbers, our commitment lies in delivering unparalleled smart shopping tools tailored to your needs.</p></div>", unsafe_allow_html=True)
 
     with col_button:
@@ -907,7 +907,7 @@ def show_testimonials():
     # Header Section
     col_head, col_nav = st.columns([10, 2])
     with col_head:
-        st.markdown(f"<h2 class='testimonial-header-title'>What Our Users Say</h2>", unsafe_allow_html=True)
+        st.markdown(f"<h2 class='testimonial-header-title'>What People's Reaction On Compario</h2>", unsafe_allow_html=True)
         st.markdown("<p class='testimonial-header-subtitle'>Read testimonials from savvy shoppers who trust Compario to maximize their savings.</p>", unsafe_allow_html=True)
     with col_nav:
         # Placeholder for navigation arrows (styled to match)
@@ -1107,39 +1107,44 @@ def show_custom_footer():
 
     with col2:
         st.markdown(f"""
-            <div class="footer-section-title">Company</div>
+            <div class="footer-section-title">Discover Compario</div>
             <ul class="footer-link-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Work With Us</a></li>
                 <li><a href="#">Our Blog</a></li>
+                <li><a href="#">Partner With Us</a></li>    
                 <li><a href="#">Terms & Conditions</a></li>
             </ul>
         """, unsafe_allow_html=True)
 
     with col3:
         st.markdown(f"""
-            <div class="footer-section-title">Tools</div>
+            <div class="footer-section-title">Smart Tools</div>
             <ul class="footer-link-list">
                 <li><a href="#">Search by Image</a></li>
                 <li><a href="#">Advanced Search</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Retailers</a></li>
+                <li><a href="#">Deal Alerts</a></li>
                 <li><a href="#">Pricing Alerts</a></li>
             </ul>
         """, unsafe_allow_html=True)
 
     with col4:
         st.markdown(f"""
-            <div class="footer-section-title">Contact Us</div>
+            <div class="footer-section-title">Connect With Us</div>
             <div class="footer-contact-item">
-                <span class="footer-contact-icon">📍</span> <span>Plot No. IIIG/2, New Town- Action area- III, Kolkata Leather Complex, Beonta II, Dist- South 24 parganas, Kolkata- 700135 (Near Hatishala)</span>
+                <span class="footer-contact-icon">📍</span> <span>Head Office: Plot No. IIIG/2, New Town- Action area- III, Kolkata Leather Complex, Beonta II, Dist- South 24 parganas, Kolkata- 700135 (Near Hatishala)</span>
             </div>
             <div class="footer-contact-item">
-                <span class="footer-contact-icon">📧</span> <span><a href="mailto:support@Compario.com" style="color:{PRIMARY_COLOR};">support@Compario.com</a></span>
+                <span class="footer-contact-icon">✉️</span> <span><a href="mailto:support@Compario.com" style="color:{PRIMARY_COLOR};">support@Compario.com</a></span>
             </div>
             <div class="footer-contact-item">
-                <span class="footer-contact-icon">📞</span> <span>(+123) 549 7652</span>
+                <span class="footer-contact-icon">📞</span> <span>+91 98765 43210</span>
+            </div>
+            <div class="footer-contact-item">
+                <span class="footer-contact-icon">🕒</span>Working Hours: Monday - Saturday: 9:00 AM - 7:00 PM</span>
             </div>
         """, unsafe_allow_html=True)
 
@@ -1149,7 +1154,7 @@ def show_custom_footer():
     # 4. Bottom Bar (placed immediately after the main area)
     st.markdown(f"""
         <div class='footer-bottom-bar'>
-            <span>Copyright © 2025 Compario. All rights reserved.</span>
+            <span>© 2025 Compario. All rights reserved. Designed by Shivaditya Mondal.</span>
             <span class='social-icons'>
                 <a href="#">📷</a> 
                 <a href="#">📘</a> 
@@ -1169,17 +1174,17 @@ def home_page():
     show_topbar()
     
     # Using the Primary Color for the main heading
-    st.markdown(f"<h1 style='text-align:center; color:{PRIMARY_COLOR};'>🛒 AI-Powered Product Price Comparison</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align:center; font-size:18px; color:gray;'>Upload a product image and instantly find the lowest prices across multiple e-commerce platforms.</p>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align:center; color:{PRIMARY_COLOR};'>⚡ AI-Driven Price Intelligence, Effortless Smart Shopping</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; font-size:18px; color:gray;'>Upload an image of your desired product and instantly find the lowest prices across multiple e-commerce platforms.</p>", unsafe_allow_html=True)
 
-    st.markdown("<div class='offer-banner'>🔥 New User Exclusive: Get 10% Extra Cashback on Your First Purchase!</div>", unsafe_allow_html=True)
+    st.markdown("<div class='offer-banner'>🔥 New User Exclusive: Get upto 90% Cashback on Your First order!!</div>", unsafe_allow_html=True)
 
-    st.markdown("<h2 class='section-title'>Advantages of Using compario</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='section-title'>What Makes Compario Different?</h2>", unsafe_allow_html=True)
     cols = st.columns(3)
     advantages = [
         ("⚡ Lightning Fast Search", "Find the best deals within seconds, saving precious time."),
         ("🤖 Precision AI Identification", "Upload any product image and the AI identifies it automatically with high accuracy."),
-        ("💰 Maximize Savings", "Compare prices across all major e-commerce platforms effortlessly.")
+        ("💰 Maximize Savings & Guaranteed Lowest Price", "Compare prices across all major e-commerce platforms effortlessly.")
     ]
 
     show_core_features()
@@ -1196,7 +1201,7 @@ def home_page():
 
     # --- Key Features Section with FINAL ALIGNMENT FIX ---
 
-    st.markdown("<h2 class='section-title'>Key Features</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='section-title'>Intelligent Tools For Effortless Shopping</h2>", unsafe_allow_html=True)
     
     # Custom CSS for the tiny image container to vertically center the icon
     st.markdown("""
@@ -1234,9 +1239,9 @@ def home_page():
         
         features_left = [
             "Instant price comparison across top platforms",
-            "AI-powered product recognition from images",
+            "AI-powered product Detection",
             "Secure user authentication and data privacy",
-            "User-friendly dashboard and personalized reports"
+            "Deal Alerts & savings recommandations"
         ]
         for feat in features_left:
             # Assuming 'feature-card' is defined in your CSS/styling
@@ -1249,8 +1254,8 @@ def home_page():
         features_right = [
             # New features added from your document
             "Saves user time and money by finding the best deals ", 
-            "Integrates with major e-commerce platforms ",
-            "Displays detailed product information",
+            "Seamless Integration with major e-commerce platforms ",
+            "User-friendly dashboard and personalized reports",
             "Provides alternative suggestions when prices are not found " 
         ]
         for feat in features_right:
@@ -1260,7 +1265,7 @@ def home_page():
     # --- END OF KEY FEATURES SECTION ---
 
 
-    st.markdown("<h2 class='section-title'>E-Commerce Platforms Included</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='section-title'>Supported E-Commerce Platforms We Cover</h2>", unsafe_allow_html=True)
     platforms = ["Amazon", "Flipkart", "Snapdeal"]  # Added Tata Cliq
     # Adjust columns dynamically for better spacing
     platform_cols = st.columns(len(platforms))
@@ -1269,7 +1274,7 @@ def home_page():
 
 
 
-    st.markdown("<h2 class='section-title'>About compario</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 class='section-title'>Get to know compario</h2>", unsafe_allow_html=True)
     about_text = """
     Compario is designed to simplify your online shopping experience. 
     With the growing number of online shopping platforms, finding the absolute lowest price can be time-consuming and frustrating. 
